@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>divs interativas</title>
+    <!-- <meta name="description" content="teste com divs com mudança de display com javascrip">
+    <meta name="author" content="Bruno Rios">
+
+    <meta property="og:title" content="divs interativas">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ios-ideiasjavascrip-rynbpz2c04e.ws-us27.gitpod.io/">
+    <meta property="og:description" content="teste com divs com mudança de display com javascript"> -->
+
+    <style>
+        #container {
+            /* It is split into 3 columns */
+            column-count: 3;
+
+            /* The space between columns */
+            column-gap: 1rem;
+
+            /* Misc */
+            width: 100%;
+        }
+
+        .child {
+            display: none;
+            border-radius: 1rem;
+            padding: 1rem;
+            break-inside: avoid;
+            margin-bottom: 1rem;
+            background-color: #696969;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>teste de Divs</h1>
+    <h4>selecione quantas divs devem ser mostradas na tela. Cada clique gera tamanhos randômicos para cada div</h4>
+    <hr>
+    <input type="button" value="mostrar 1 div" class="div-num" data-index-number="1">
+    <input type="button" value="mostrar 2 div" class="div-num" data-index-number="2">
+    <input type="button" value="mostrar 3 div" class="div-num" data-index-number="3">
+    <input type="button" value="mostrar 4 div" class="div-num" data-index-number="4">
+    <input type="button" value="mostrar 5 div" class="div-num" data-index-number="5">
+    <input type="button" value="mostrar 6 div" class="div-num" data-index-number="6">
+    <input type="button" value="mostrar 7 div" class="div-num" data-index-number="7">
+    <input type="button" value="mostrar 8 div" class="div-num" data-index-number="8">
+    <input type="button" value="mostrar 9 div" class="div-num" data-index-number="9">
+    <input type="button" value="mostrar 10 div" class="div-num" data-index-number="10">
+    <input type="button" value="mostrar 11 div" class="div-num" data-index-number="11">
+    <input type="button" value="mostrar 12 div" class="div-num" data-index-number="12">
+    <hr>
+    <div id="container">
+        <div class="child">01</div>
+        <div class="child">02</div>
+        <div class="child">03</div>
+        <div class="child">04</div>
+        <div class="child">05</div>
+        <div class="child">06</div>
+        <div class="child">07</div>
+        <div class="child">08</div>
+        <div class="child">09</div>
+        <div class="child">10</div>
+        <div class="child">11</div>
+        <div class="child">12</div>
+    </div>
+
+    <script src="../js/showDiv.js"></script>
+</body>
+
+</html>
