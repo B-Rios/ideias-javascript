@@ -16,6 +16,7 @@ function showResult(url){
     fetch(url).then(res => res.json())
     .then(function(data){
     console.log(data.Search);
+    container.innerHTML = ''
     data.Search.forEach(element => {
         const el = document.createElement('div');
         const image = document.createElement('img');
